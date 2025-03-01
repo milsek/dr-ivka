@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import './fonts.css';
+
+@theme {
+  --font-display: "Montserrat", "sans-serif";
+  --color-light: #b5e48c;
+  --color-accent: #76c893;
+}
+
+/* ----------- custom css ----------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgba(233, 234, 236, var(--tw-bg-opacity));
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(161, 208, 120);
+  border: rgb(121, 168, 80) solid 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 188, 100);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hidden-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* selection */
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: rgb(0, 0, 0);
+}
+
+::selection {
+  color: white;
+  background: rgb(0, 0, 0);
+}
