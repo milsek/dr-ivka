@@ -1,5 +1,13 @@
+<script setup>
+import LandingCover from '@/components/landing/LandingCover.vue';
+import LandingIntro from '@/components/landing/LandingIntro.vue';
+import LandingOffice from '@/components/landing/LandingOffice.vue';
+</script>
+
 <template>
-  <div class="bg-light/40 w-full h-screen">
-    <p class="text-center">Coming Soon</p>
+  <div>
+    <LandingCover />
+    <LandingIntro />
+    <LandingOffice />
   </div>
 </template>

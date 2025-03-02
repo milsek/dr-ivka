@@ -1,29 +1,29 @@
 <script setup>
 import { ref } from 'vue';
-import NavigationButton from './misc/NavigationButton.vue';
+import NavigationButton from '@/components/common/misc/NavigationButton.vue';
 
 const isOpen = ref(false); 
 </script>
 
 <template>
-  <nav class="absolute top-0 left-0 w-full bg-white shadow-md font-display font-semibold">
-    <div class="max-w-[1400px] px-4 md:px-6 lg:px-10 mx-auto">
-      <div class="flex justify-between h-20">
-        <div class="flex-shrink-0 flex items-center">
+  <nav class="absolute top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="px-4 md:px-0 mx-auto">
+      <div class="flex justify-between md:justify-start md:flex-col">
+        <div class="flex md:justify-center flex-shrink-0 items-center md:py-1">
           <RouterLink to="/">
-            <div class="flex items-center justify-center">
-              <img src="/images/logo.png" class="h-16 md:h-17">
+            <div class="flex items-center justify-center h-24">
+              <img src="/images/logo.png" class="h-16 md:h-20">
             </div>
           </RouterLink>
         </div>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center md:space-x-3 space-x-6 xl:space-x-8">
+        <div class="hidden md:flex justify-center items-center space-x-10 bg-amber-950">
           <NavigationButton label="Početna" to="/" />
           <NavigationButton label="O nama" to="/" />
           <NavigationButton label="Pregledi" to="/" />
           <NavigationButton label="Cjenovnik" to="/" />
-          <NavigationButton label="Kontakt" to="/" />
+          <NavigationButton label="Kontakt" to="/kontakt" />
         </div>
 
         <!-- Mobile Navigation -->
@@ -52,7 +52,7 @@ const isOpen = ref(false);
             <NavigationButton label="O nama" to="/" class="block" />
             <NavigationButton label="Pregledi" to="/" class="block" />
             <NavigationButton label="Cjenovnik" to="/" class="block" />
-            <NavigationButton label="Kontakt" to="/" class="block" />
+            <NavigationButton label="Kontakt" to="/kontakt" class="block" />
           </div>
         </div>
       </Transition>
