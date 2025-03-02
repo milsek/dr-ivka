@@ -10,7 +10,7 @@
       <div class="bg-gray-600/10 text-lime-950 p-3 md:p-4 rounded-md mx-auto md:mx-0 w-full md:w-80 mt-10 space-y-1">
         <div class="flex space-x-3">
           <img src="/icons/phone.png" alt="phone icon" class="w-4 h-4 my-auto select-none">
-          <p class="my-auto font-medium">055 251 243</p>
+          <p class="my-auto font-medium">055 555 555</p>
         </div>
         <div class="flex space-x-3">
           <img src="/icons/location.png" alt="phone icon" class="w-4 h-4 my-auto select-none">
