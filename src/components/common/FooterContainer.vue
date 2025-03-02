@@ -11,7 +11,7 @@ import FooterNavigationButton from '@/components/common/misc/FooterNavigationBut
           <FooterNavigationButton label="Početna" to="/" class="block" />
           <FooterNavigationButton label="O nama" to="/" class="block" />
           <FooterNavigationButton label="Pregledi" to="/" class="block" />
-          <FooterNavigationButton label="Cjenovnik" to="/" class="block" />
+          <FooterNavigationButton label="Cjenovnik" to="/cjenovnik" class="block" />
           <FooterNavigationButton label="Kontakt" to="/kontakt" class="block" />
         </div>
 

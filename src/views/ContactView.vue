@@ -29,7 +29,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="shadow-md min-h-screen mt-28 md:mt-44">
+  <div class="shadow-md min-h-screen pt-28 md:pt-48">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1400px] px-4 md:px-6 lg:px-10 mx-auto">
       <!-- Contact Information -->
       <div class="space-y-6">

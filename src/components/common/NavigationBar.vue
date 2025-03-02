@@ -22,7 +22,7 @@ const isOpen = ref(false);
           <NavigationButton label="Početna" to="/" />
           <NavigationButton label="O nama" to="/" />
           <NavigationButton label="Pregledi" to="/" />
-          <NavigationButton label="Cjenovnik" to="/" />
+          <NavigationButton label="Cjenovnik" to="/cjenovnik" />
           <NavigationButton label="Kontakt" to="/kontakt" />
         </div>
 
@@ -51,7 +51,7 @@ const isOpen = ref(false);
             <NavigationButton label="Početna" to="/" class="block" />
             <NavigationButton label="O nama" to="/" class="block" />
             <NavigationButton label="Pregledi" to="/" class="block" />
-            <NavigationButton label="Cjenovnik" to="/" class="block" />
+            <NavigationButton label="Cjenovnik" to="/cjenovnik" class="block" />
             <NavigationButton label="Kontakt" to="/kontakt" class="block" />
           </div>
         </div>
