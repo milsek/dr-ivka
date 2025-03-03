@@ -29,7 +29,7 @@ const sections = [
 </script>
 
 <template>
-  <div class="min-h-screen px-4 md:px-6 lg:px-10 pt-36 md:pt-48 pb-20">
+  <div class="min-h-screen px-6 lg:px-10 pt-36 md:pt-48 pb-20">
     <div class="max-w-[800px] mx-auto">
       <h1 class="text-3xl md:text-4xl font-light text-center mb-12">Pregledi</h1>
 

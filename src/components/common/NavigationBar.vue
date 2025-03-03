@@ -20,7 +20,7 @@ const isOpen = ref(false);
         <!-- Desktop Navigation -->
         <div class="hidden md:flex justify-center items-center space-x-10 bg-amber-950">
           <NavigationButton label="Početna" to="/" />
-          <NavigationButton label="O nama" to="/" />
+          <NavigationButton label="O nama" to="/o-nama" />
           <NavigationButton label="Pregledi" to="/pregledi" />
           <NavigationButton label="Cjenovnik" to="/cjenovnik" />
           <NavigationButton label="Kontakt" to="/kontakt" />
@@ -49,7 +49,7 @@ const isOpen = ref(false);
         <div v-if="isOpen" class="md:hidden border-t border-gray-200 mt-4">
           <div class="px-2 pt-2 pb-3 space-y-1">
             <NavigationButton label="Početna" to="/" class="block" />
-            <NavigationButton label="O nama" to="/" class="block" />
+            <NavigationButton label="O nama" to="/o-nama" class="block" />
             <NavigationButton label="Pregledi" to="/pregledi" class="block" />
             <NavigationButton label="Cjenovnik" to="/cjenovnik" class="block" />
             <NavigationButton label="Kontakt" to="/kontakt" class="block" />
