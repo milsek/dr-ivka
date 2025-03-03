@@ -10,7 +10,7 @@ import FooterNavigationButton from '@/components/common/misc/FooterNavigationBut
         <div class="flex flex-col md:flex-row space-y-1.5 md:space-y-0 md:space-x-12 mx-auto">
           <FooterNavigationButton label="Početna" to="/" class="block" />
           <FooterNavigationButton label="O nama" to="/" class="block" />
-          <FooterNavigationButton label="Pregledi" to="/" class="block" />
+          <FooterNavigationButton label="Pregledi" to="/pregledi" class="block" />
           <FooterNavigationButton label="Cjenovnik" to="/cjenovnik" class="block" />
           <FooterNavigationButton label="Kontakt" to="/kontakt" class="block" />
         </div>
