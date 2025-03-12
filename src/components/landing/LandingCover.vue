@@ -26,7 +26,7 @@ onMounted(() => {
           :key="slide"
           :src="slide"
           v-show="currentSlide === index"
-          class="absolute inset-0 w-full h-full object-cover"
+          class="absolute inset-0 w-full h-full object-left md:object-center object-cover"
           alt="Carousel image"
         />
       </transition-group>
