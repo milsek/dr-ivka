@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-slate-50">
+  <div class="w-full bg-slate-100">
     <div class="flex flex-col-reverse lg:flex-row lg:justify-between lg:space-x-24 max-w-[1400px] px-4 md:px-6 lg:px-24 py-16 lg:py-24 mx-auto">
       <div class="flex flex-col mt-16 lg:mt-0 justify-center px-4 lg:px-0">
         <p class="text-2xl font-semibold">Zašto izabrati baš nas?</p>

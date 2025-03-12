@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <a :href="to" class="text-lg md:text-base font-display font-medium text-lime-800 hover:text-lime-700 py-0.5 transition ease-in duration-150">
+  <a :href="to" class="text-lg md:text-base font-display text-center md:text-left font-medium text-lime-800 hover:text-lime-700 py-0.5 transition ease-in duration-150">
     {{ label }}
   </a>
 </template>

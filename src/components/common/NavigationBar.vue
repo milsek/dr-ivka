@@ -18,7 +18,7 @@ const isOpen = ref(false);
         </div>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex justify-center items-center space-x-10 bg-amber-950">
+        <div class="hidden md:flex justify-center items-center space-x-10 bg-light">
           <NavigationButton label="Početna" to="/" />
           <NavigationButton label="O nama" to="/o-nama" />
           <NavigationButton label="Pregledi" to="/pregledi" />

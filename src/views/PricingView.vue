@@ -44,7 +44,7 @@ const pediatricServices = [
       <h1 class="text-3xl md:text-4xl font-light text-center mb-12">Cjenovnik usluga</h1>
       
       <div class="space-y-8">
-        <div v-for="category in pediatricServices" :key="category.categoryName" class="bg-light/20 rounded-lg shadow-sm p-6">
+        <div v-for="category in pediatricServices" :key="category.categoryName" class="bg-light/30 rounded-lg shadow-sm p-6">
           <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">{{ category.categoryName }}</h2>
           
           <div class="space-y-4">

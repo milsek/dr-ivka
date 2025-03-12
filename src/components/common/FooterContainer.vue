@@ -4,38 +4,58 @@ import FooterNavigationButton from '@/components/common/misc/FooterNavigationBut
 
 <template>
   <footer class="bg-light w-full shadow-inner">
-    <div>
-      <div class="flex flex-col-reverse md:flex-col space-y-6 py-10 md:py-18 gap-y-6 md:gap-y-0 max-w-[1400px] px-4 md:px-6 lg:px-10 mx-auto">
-
-        <div class="flex flex-col md:flex-row space-y-1.5 md:space-y-0 md:space-x-12 mx-auto">
-          <FooterNavigationButton label="Početna" to="/" class="block" />
-          <FooterNavigationButton label="O nama" to="/o-nama" class="block" />
-          <FooterNavigationButton label="Pregledi" to="/pregledi" class="block" />
-          <FooterNavigationButton label="Cjenovnik" to="/cjenovnik" class="block" />
-          <FooterNavigationButton label="Kontakt" to="/kontakt" class="block" />
+    <div class="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-10 pb-4 md:pt-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Logo -->
+        <div class="flex flex-col items-center md:items-start mt-8 md:mt-0">
+          <img src="/images/logo.png" alt="Dr Ivka logo" class="w-80 md:w-72" />
         </div>
 
-        <div class="mx-auto">
-          <img src="/images/logo.png" alt="okaywhen logo" class="w-80 md:w-88" />
+        <!-- Kontakt -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-lg font-semibold text-lime-950 mb-2 md:mb-4">Kontakt</h3>
+          <div class="space-y-2 text-lime-800 text-center md:text-left text-lg md:text-base">
+            <div class="flex items-center space-x-2">
+              <img src="/icons/location.png" alt="location icon" class="w-4 h-4 opacity-70">
+              <p>Ćirila i Metodija 1a, 76330 Ugljevik</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="/icons/phone.png" alt="phone icon" class="w-4 h-4 opacity-70">
+              <p>Tel: 055 555 555</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="/icons/mail.png" alt="email icon" class="w-4 h-4 opacity-70">
+              <p>Email: kontakt@drivka.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigacija -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-lg font-semibold text-lime-950 mb-2 md:mb-4">Navigacija</h3>
+          <div class="flex flex-col space-y-2">
+            <FooterNavigationButton label="Početna" to="/" />
+            <FooterNavigationButton label="O nama" to="/o-nama" />
+            <FooterNavigationButton label="Pregledi" to="/pregledi" />
+            <FooterNavigationButton label="Cjenovnik" to="/cjenovnik" />
+            <FooterNavigationButton label="Kontakt" to="/kontakt" />
+          </div>
         </div>
 
       </div>
 
-      <div class="space-y-4 text-center md:text-left bg-slate-400 py-2.5 border-t border-slate-500">
-        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 justify-between w-full
-        max-w-[1400px] mx-auto px-4 md:px-6 lg:px-10 text-gray-700 s">
-          <div>
-            <h1 class="text-lg font-bold">
-              Dr Ivka Džuveleković
-            </h1>
-            <h2 class="text-sm">Pedijatrijska ordinacija</h2>
-          </div>
-          <div class="my-auto md:text-right">
-            <p class="text-xs">Copyright © {{ (new Date()).getUTCFullYear() }} - All rights reserved</p>
-            <p class="text-sm">Created by <span class="italic font-bold text-gray-800">FriedLiver</span></p>
-          </div>
+      <div class="flex flex-col md:flex-row justify-between mt-8 pt-6 text-center">
+        <div class="flex flex-col md:text-left my-auto py-2 md:py-0 bg-white md:bg-transparent">
+          <h1 class="text-2xl md:text-lg font-bold text-gray-700">Dr Ivka Džuveleković</h1>
+          <h2 class="text-lg md:text-sm text-gray-700">Pedijatrijska ordinacija</h2>
+        </div>
+        <div class="md:text-right text-gray-600 my-auto mt-2 md:mt-0">
+          <p class="text-sm md:text-xs">Copyright © {{ (new Date()).getUTCFullYear() }} - All rights reserved</p>
+          <p class="text-base md:text-sm">Created by <span class="italic font-bold text-gray-700">FriedLiver</span></p>
         </div>
       </div>
+
     </div>
   </footer>
 </template>
