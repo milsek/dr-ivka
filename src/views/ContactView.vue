@@ -15,14 +15,14 @@ onMounted(() => {
     iconAnchor: [20, 40],
   });
 
-  const map = L.map(mapContainer.value).setView([44.69268295470412, 18.992659138699235], 17)
+  const map = L.map(mapContainer.value).setView([44.69266026172411, 18.992975724687057], 17)
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors',
     maxZoom: 20,
   }).addTo(map)
 
-  L.marker([44.69268295470412, 18.992659138699235], { icon, clickable: false }).addTo(map);
+  L.marker([44.69266026172411, 18.992975724687057], { icon, clickable: false }).addTo(map);
 })
 </script>
 
