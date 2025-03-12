@@ -5,35 +5,35 @@ import FooterNavigationButton from '@/components/common/misc/FooterNavigationBut
 <template>
   <footer class="bg-light w-full shadow-inner">
     <div class="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-10 pb-4 md:pt-16">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         
         <!-- Logo -->
-        <div class="flex flex-col items-center md:items-start mt-8 md:mt-0">
+        <div class="flex flex-col items-center md:items-start mt-8 md:mt-0 md:col-span-2">
           <img src="/images/logo.png" alt="Dr Ivka logo" class="w-80 md:w-72" />
         </div>
 
         <!-- Kontakt -->
-        <div class="flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold text-lime-950 mb-2 md:mb-4">Kontakt</h3>
-          <div class="space-y-2 text-lime-800 text-center md:text-left text-lg md:text-base">
-            <div class="flex items-center space-x-2">
-              <img src="/icons/location.png" alt="location icon" class="w-4 h-4 opacity-70">
+        <div class="flex flex-col items-center md:items-end text-center md:text-right mt-2 md:mt-0">
+          <h3 class="text-xl md:text-lg font-semibold text-lime-950 mb-2 md:mb-4">Kontakt</h3>
+          <div class="space-y-2 text-lime-800 text-lg md:text-base">
+            <div class="flex md:flex-row-reverse justify-center md:justify-startstart items-center">
+              <img src="/icons/location.png" alt="location icon" class="w-4 h-4 opacity-70 mr-3 ml-0 md:ml-3 md:mr-0 select-none">
               <p>Ćirila i Metodija 1a, 76330 Ugljevik</p>
             </div>
-            <div class="flex items-center space-x-2">
-              <img src="/icons/phone.png" alt="phone icon" class="w-4 h-4 opacity-70">
-              <p>Tel: 055 555 555</p>
+            <div class="flex md:flex-row-reverse justify-center md:justify-start items-center">
+              <img src="/icons/phone.png" alt="phone icon" class="w-4 h-4 opacity-70 mr-3 ml-0 md:ml-3 md:mr-0 select-none">
+              <p>055 555 555</p>
             </div>
-            <div class="flex items-center space-x-2">
-              <img src="/icons/mail.png" alt="email icon" class="w-4 h-4 opacity-70">
-              <p>Email: kontakt@drivka.com</p>
+            <div class="flex md:flex-row-reverse justify-center md:justify-start items-center">
+              <img src="/icons/mail.png" alt="email icon" class="w-4 h-4 opacity-70 mr-3 ml-0 md:ml-3 md:mr-0 select-none">
+              <p>kontakt@drivka.com</p>
             </div>
           </div>
         </div>
 
         <!-- Navigacija -->
-        <div class="flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold text-lime-950 mb-2 md:mb-4">Navigacija</h3>
+        <div class="flex flex-col items-center md:items-end">
+          <h3 class="text-xl md:text-lg font-semibold text-lime-950 mb-2 md:mb-4 md:text-right">Navigacija</h3>
           <div class="flex flex-col space-y-2">
             <FooterNavigationButton label="Početna" to="/" />
             <FooterNavigationButton label="O nama" to="/o-nama" />
